@@ -113,3 +113,12 @@ gpgcheck=0
 enabled=1' | sudo tee /etc/yum.repos.d/sensu.repo
 ```
 
+Se realizo la instalación de sensu mediante los siguientes comandos 
+
+```
+yum install sensu -y
+sensu-install -p sensu-plugin
+sensu-install -p sensu-plugins-slack
+```
+
+
