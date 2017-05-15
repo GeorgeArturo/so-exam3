@@ -203,4 +203,8 @@ service uchiwa restart
 
 * Prueba de funcionamiento de uchiwa
 
+* Prueba 1
 ![GitHub Logo0](Imagenes/uchiwa.png)
+
+* Prueba 2
+![GitHub Logo0](Imagenes/uchiwa2.png)
