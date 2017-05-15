@@ -101,3 +101,15 @@ end
 ```
 
 * **Instrucciones para la configuración del servidor**
+
+Lo primero que se hizo para la instalación del servidor fue:
+
+
+```
+echo '[sensu]
+name=sensu
+baseurl=https://sensu.global.ssl.fastly.net/yum/$releasever/$basearch/
+gpgcheck=0
+enabled=1' | sudo tee /etc/yum.repos.d/sensu.repo
+```
+
