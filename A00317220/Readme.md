@@ -215,3 +215,10 @@ A continuación se muestra la generación de una alerta por parte de uchiwa cuan
 ![GitHub Logo0](Imagenes/parcial3.gif)
 
 
+
+
+## falta punto 5 y 6
+
+
+
+
