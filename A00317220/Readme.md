@@ -179,3 +179,14 @@ firewall-cmd --zone=public --add-port=15672/tcp --permanent
 firewall-cmd --zone=public --add-port=3000/tcp --permanent
 firewall-cmd --reload
 ```
+
+Finalmente se reinician los servicios
+
+```
+service sensu-server restart
+service sensu-api restart
+service uchiwa restart
+
+```
+
+
