@@ -39,7 +39,22 @@ El servicio de httpd se instalo mediante el siguiente comando
 yum install httpd -y
 ```
 
+* Para la parte de la configuración de rabbitmq se hizo lo siguiente 
 
+```
+cd /etc/sensu/conf.d
+```
+Una vez aqui se creo un archivo tipo json con la siguiente información
 
+```
+{
+  "client": {
+    "name": "A00317220",
+    "address": "192.168.57.4",
+    "subscriptions": ["webservers"]
+  }
+}
+
+```
 
 * Instrucciones para la configuración del servidor
