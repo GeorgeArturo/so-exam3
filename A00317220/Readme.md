@@ -316,4 +316,38 @@ finalmente se instala kibana
 yum install kibana -y
 ```
 
+* Instalación de filebeat 
+
+Primero se descar e instala la llave publica mediante el siguiente comando
+
+```
+sudo rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+```
+
+Una vez instalada esta llave publica se crea un archivo que contenga el repositorio de filebeat
+
+```
+vi /etc/yum.repos.d/elastic.repo
+```
+
+En el editor se pone la siguiente información
+
+```
+[elastic-5.x]
+name=Elastic repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+```
+
+finalmente se instala filebeat mediante el siguiente comando:
+
+```
+sudo yum install filebeat -y
+```
+
+
 
