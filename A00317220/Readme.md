@@ -289,5 +289,31 @@ finalmente se instala logstash
 yum install logstash -y
 ```
 
-* 
+* KIBANA
+
+Primero se crea un archivo que contenga el repositorio de kibana
+
+```
+vi /etc/yum.repos.d/kibana.repo
+```
+
+Una vez en el editor se pone la siguiente información
+
+```
+[kibana-5.x]
+name=Kibana repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+```
+
+finalmente se instala kibana
+
+```
+yum install kibana -y
+```
+
 
