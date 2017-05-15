@@ -119,6 +119,9 @@ Se realizo la instalación de sensu mediante los siguientes comandos
 yum install sensu -y
 sensu-install -p sensu-plugin
 sensu-install -p sensu-plugins-slack
+su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm'
 ```
+
+Se instalo erlang
 
 
