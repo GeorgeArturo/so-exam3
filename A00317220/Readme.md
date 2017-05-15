@@ -220,5 +220,11 @@ A continuación se muestra la generación de una alerta por parte de uchiwa cuan
 ## falta punto 5 y 6
 
 
+** A continuación se muestra los pasos para la configuración y la instalación del stack de ELK**
+
+
+
+
+
 
 
