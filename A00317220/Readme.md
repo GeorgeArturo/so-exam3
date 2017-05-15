@@ -220,7 +220,7 @@ A continuación se muestra la generación de una alerta por parte de uchiwa cuan
 ## falta punto 5 y 6
 
 
-** A continuación se muestra los pasos para la configuración y la instalación del stack de ELK**
+**A continuación se muestra los pasos para la configuración y la instalación del stack de ELK**
 
 El primer paso es instalar el openjdk de Java, para esto se utilizo el siguiente comando
 
@@ -263,9 +263,31 @@ yum install elasticsearch -y
 
 * Logstash
 
+Primero se crea un archivo que contenga el repositorio de logstash
 
+```
+vi /etc/yum.repos.d/logstash.repo
+```
 
+Una vez en el editor se pone la siguiente información
 
+```
+[logstash-5.x]
+name=Elastic repository for 5.x packages
+baseurl=https://artifacts.elastic.co/packages/5.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
 
+```
 
+finalmente se instala logstash
+
+```
+yum install logstash -y
+```
+
+* 
 
