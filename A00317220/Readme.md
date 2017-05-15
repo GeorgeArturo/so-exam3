@@ -189,4 +189,10 @@ service uchiwa restart
 
 ```
 
+**A continuación se muestra una prueba del funcionamiento de rabbitmq y de sensu**
 
+* Prueba de funcionamiento de Rabbitmq
+
+![GitHub Logo0](Imagenes/Rabbit.png)
+
+![GitHub Logo0](Imagenes/Rabbit2.png)
