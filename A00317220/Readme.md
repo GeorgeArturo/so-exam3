@@ -74,5 +74,30 @@ Luego se creo otro archivo tipo json (rabbitmq.json) con la siguiente informaci�
 
 ```
 
+Finalmente se instalaron algunos plugins para el correcto funcionamiento, para esto lo que se hizo fue:
+
+```
+cd /etc/sensu/plugins
+```
+
+una vez en esta direccion se creo un archivo ruby (check-apache.rb) con la siguiente información
+
+```
+#!/usr/bin/env ruby
+
+procs = `ps aux`
+running = false
+procs.each_line do |proc|
+  running = true if proc.include?('httpd')
+end
+if running
+  puts 'OK - Apache daemon is running'
+  exit 0
+else
+  puts 'WARNING - Apache daemon is NOT running'
+  exit 1
+end
+
+```
 
 * Instrucciones para la configuración del servidor
