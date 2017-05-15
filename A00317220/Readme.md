@@ -10,7 +10,7 @@
 
 * Instrucciones para la configuración del cliente
 
-lo primero que se hizo para la instalación del cliente fue:
+Lo primero que se hizo para la instalación del cliente fue:
 
 ``` 
 echo '[sensu]
@@ -20,5 +20,26 @@ gpgcheck=0
 enabled=1' | sudo tee /etc/yum.repos.d/sensu.repo
 
 ```
+
+Luego se instalo sensu mediante los siguientes comandos:
+
+```
+yum install sensu -y
+sensu-install -p sensu-plugin
+```
+
+El servicio del cliente se inicia mediante el siguiente comando:
+
+```
+service sensu-client start
+```
+El servicio de httpd se instalo mediante el siguiente comando
+
+```
+yum install httpd -y
+```
+
+
+
 
 * Instrucciones para la configuración del servidor
