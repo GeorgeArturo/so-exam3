@@ -44,7 +44,7 @@ yum install httpd -y
 ```
 cd /etc/sensu/conf.d
 ```
-Una vez aqui se creo un archivo tipo json con la siguiente información
+Una vez aqui se creo un archivo tipo json (client.json) con la siguiente información
 
 ```
 {
@@ -56,5 +56,23 @@ Una vez aqui se creo un archivo tipo json con la siguiente información
 }
 
 ```
+
+Luego se creo otro archivo tipo json (rabbitmq.json) con la siguiente información:
+
+```
+{
+  "rabbitmq": {
+    "host": "192.168.57.3",
+    "port": 5672,
+    "vhost": "/sensu",
+    "user": "sensu",
+    "password": "password",
+    "heartbeat": 10,
+    "prefetch": 50
+  }
+}
+
+```
+
 
 * Instrucciones para la configuración del servidor
