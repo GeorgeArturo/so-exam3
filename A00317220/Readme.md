@@ -8,7 +8,7 @@
 
 ### Procedimiento
 
-* Instrucciones para la configuración del cliente
+* **Instrucciones para la configuración del cliente**
 
 Lo primero que se hizo para la instalación del cliente fue:
 
@@ -100,4 +100,4 @@ end
 
 ```
 
-* Instrucciones para la configuración del servidor
+* **Instrucciones para la configuración del servidor**
