@@ -208,3 +208,10 @@ service uchiwa restart
 
 * Prueba 2
 ![GitHub Logo0](Imagenes/uchiwa2.png)
+
+
+A continuación se muestra la generación de una alerta por parte de uchiwa cuanto se detecta la caida de un servicio (ver el gif hasta el final duración aproximada 60 segundos)
+
+![GitHub Logo0](Imagenes/parcial3.gif)
+
+
