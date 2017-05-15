@@ -124,4 +124,25 @@ su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-relea
 
 Se instalo erlang
 
+```
+yum install erlang -y
+```
+
+Se instalo redis
+
+```
+yum install redis -y
+```
+Iniciar el servicio redis
+```
+service redis start
+```
+
+Se instalo socat
+```
+yum install socat -y
+```
+
+```
+```
 
