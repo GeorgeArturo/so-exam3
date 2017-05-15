@@ -410,12 +410,12 @@ service elasticsearch start
 
 * Pruebas de funcionamiento
 
-* Kibana
+## Kibana
 
 ![GitHub Logo0](Imagenes/kibana.png)
 
 
-* Elasticsearch
+## Elasticsearch
 
 ![GitHub Logo0](Imagenes/ejemplo0.png)
 
