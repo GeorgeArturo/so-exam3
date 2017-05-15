@@ -12,7 +12,7 @@
 
 lo primero que se hizo para la instalación del cliente fue:
 
-``` python
+``` 
 echo '[sensu]
 name=sensu
 baseurl=https://sensu.global.ssl.fastly.net/yum/$releasever/$basearch/
