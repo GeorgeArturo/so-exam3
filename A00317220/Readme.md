@@ -349,5 +349,64 @@ finalmente se instala filebeat mediante el siguiente comando:
 sudo yum install filebeat -y
 ```
 
+* Una vez hecha toda la instalación de elasticsearch, se hizo una prueba de funcionamiento con el ejemplo 0 del gist.github.com/d4n13lbc/be1ad5039dff1c058b335482488d4965
+
+
+## Ejemplo 0
+
+Para la realización de este ejemplo deben realizarse las siguientes configuraciones:
+
+Primero  se configura el siguiente archivo
+
+```
+vi /etc/elasticsearch/elasticsearch.yml
+```
+
+Aqui esta parte del archivo debe quedar igual, con la unica diferencia que lo que va a cambiar es la dirección ip
+
+```
+# Set the bind address to a specific IP (IPv4 or IPv6):
+network.host: 192.168.57.5
+# Set a custom port for HTTP:
+http.port: 9200
+```
+Una vez hecha la configuración deben abrirse los puertos
+
+```
+firewall-cmd --zone=public --add-port=9200/tcp --permanent
+firewall-cmd --reload
+```
+
+Luego realizamos la siguiente configuración para kibana
+
+```
+vi /etc/kibana/kibana.yml
+```
+
+Aqui también lo unico que cambiamos es la dirección ip
+
+```
+# Kibana is served by a back end server. This setting specifies the port to use.
+server.port: 5601
+# To allow connections from remote users, set this parameter to a non-loopback address.
+server.host: "192.168.57.5"
+# The URL of the Elasticsearch instance to use for all your queries.
+elasticsearch.url: "http://192.168.57.5:9200
+```
+
+Luego de haber configurado el archivo se abren los puertos
+
+```
+firewall-cmd --zone=public --add-port=5601/tcp --permanent
+firewall-cmd --reload
+```
+
+Finalmente iniciamos los servicios
+
+```
+service kibana start
+service elasticsearch start
+```
+
 
 
