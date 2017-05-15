@@ -193,6 +193,14 @@ service uchiwa restart
 
 * Prueba de funcionamiento de Rabbitmq
 
+* Prueba 1
+
 ![GitHub Logo0](Imagenes/Rabbit.png)
 
+* Prueba 2
+
 ![GitHub Logo0](Imagenes/Rabbit2.png)
+
+* Prueba de funcionamiento de uchiwa
+
+![GitHub Logo0](Imagenes/uchiwa.png)
